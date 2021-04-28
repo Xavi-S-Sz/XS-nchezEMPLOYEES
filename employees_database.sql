@@ -24,6 +24,29 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/ `EMPLOYEESDBNORMAL` /*!40100 DEFAULT CH
 USE `EMPLOYEESDBNORMAL`;
 
 --
+-- Table structure for table `COUNTRIES`
+--
+
+DROP TABLE IF EXISTS `COUNTRIES`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `COUNTRIES` (
+  `c_id` varchar(3) NOT NULL,
+  `c_name` varchar(100) NOT NULL,
+  PRIMARY KEY (`c_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `COUNTRIES`
+--
+
+LOCK TABLES `COUNTRIES` WRITE;
+/*!40000 ALTER TABLE `COUNTRIES` DISABLE KEYS */;
+/*!40000 ALTER TABLE `COUNTRIES` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `DEPARTMENTS`
 --
 
@@ -167,4 +190,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-28  1:33:00
+-- Dump completed on 2021-04-28 14:04:27
