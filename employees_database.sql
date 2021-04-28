@@ -110,6 +110,31 @@ INSERT INTO `OCCUPATIONS` VALUES ('ANA','ANALYST'),('EMP','EMPLOYEE'),('MAN','MA
 UNLOCK TABLES;
 
 --
+-- Table structure for table `Persons`
+--
+
+DROP TABLE IF EXISTS `Persons`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `Persons` (
+  `PersonID` int(11) DEFAULT NULL,
+  `LastName` varchar(255) DEFAULT NULL,
+  `FirstName` varchar(255) DEFAULT NULL,
+  `Address` varchar(255) DEFAULT NULL,
+  `City` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Persons`
+--
+
+LOCK TABLES `Persons` WRITE;
+/*!40000 ALTER TABLE `Persons` DISABLE KEYS */;
+/*!40000 ALTER TABLE `Persons` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `TOWNS`
 --
 
@@ -142,4 +167,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-27 16:01:02
+-- Dump completed on 2021-04-28  1:33:00
